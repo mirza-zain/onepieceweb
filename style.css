@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F2A172;
+    font-family: "Bebas Neue";
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-left > #logo {
+    width: 120px;
+}
+
+#nav-center > #navlinks {
+    display: flex;
+    list-style: none;
+    gap: 25%;
+}
+
+#navlinks > li > a {
+    text-decoration: none;
+    font-size: 28px;
+    color: white;
+}
+
+#nav-right {
+    margin-right: 2%;
+} 
+
+
+#nav-right > a {
+    border: 2px solid #171717;
+    font-size: 22px;
+    border-radius: 5px;
+    padding: 2% 0%;
+    color: black;
+    background-color: yellow;
+    text-decoration: none;
+}
+
+#nav-center li a:hover{
+    color: #084DA6;
+}
+
+#hero > h1 {
+    color: #BF0A19;
+    width: 100%;
+    font-size: 220px;
+    font-weight: 400;
+    border-style: solid;
+    border-width: 2% 5%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: ease-in-out;
+    transition-duration: 2s;
+}
+
+#hero h1:hover {
+    color: #084DA6;
+}
+
+#hero h3 {
+    color: #BF0A19;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#images img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    animation: fadeInOut 15s infinite;
+}
+
+#images #img2 {
+    transform: translate(-50%, -50%) rotate(-20deg);
+    animation-delay: 2s;
+}
+
+#images #img3 {
+    transform: translate(-50%, -50%) rotate(-18deg);
+    animation-delay: 4s;
+}
+
+#images #img4 {
+    transform: translate(-50%, -50%) rotate(-16deg);
+    animation-delay: 6s;
+}
+
+#images #img5 {
+    transform: translate(-50%, -50%) rotate(-14deg);
+    animation-delay: 8s;
+}
+
+#images #img6 {
+    transform: translate(-50%, -50%) rotate(-12deg);
+    animation-delay: 10s;
+}
+
+#images #img7 {
+    transform: translate(-50%, -50%) rotate(-10deg);
+    animation-delay: 12s;
+}
+
+#images #img8 {
+    transform: translate(-50%, -50%) rotate(-8deg);
+    animation-delay: 14s;
+}
+
+#images #img1 {
+    animation-delay: 0s;
+}
+
+@keyframes fadeInOut {
+    0%, 20% {
+        opacity: 1;
+    }
+    21%, 100% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    #nav-left > #logo {
+        width: 100px;
+    }
+
+    #navlinks > li > a {
+        font-size: 18px;
+    }
+    #hero h1 {
+        font-size: 120px;
+    }
+    #hero h3 {
+        font-size: 20px;
+    }
+
+    #images img {
+        width: 180px;
+        height: 180px;
+    }
+}
