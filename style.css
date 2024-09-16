@@ -11,9 +11,14 @@ body {
     height: 100vh;
     background-color: #F2A172;
     font-family: "Bebas Neue";
+    position: relative;
 }
 
-nav {
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#Home nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,7 +62,7 @@ nav {
 #hero > h1 {
     color: #BF0A19;
     width: 100%;
-    font-size: 220px;
+    font-size: 218px;
     font-weight: 400;
     border-style: solid;
     border-width: 2% 5%;
@@ -147,6 +152,80 @@ nav {
     }
 }
 
+#About {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 125%;
+    margin: 0;
+    padding: 0;
+}
+
+#About #content {
+    display: flex;
+}
+
+#content #ab-left {
+    width: 50%;
+    margin: 0% 4%;
+}
+
+#ab-left h2{
+    font-size: 55px;
+    padding-bottom: 4%;
+    color: #084DA6;
+}
+
+#ab-left p{
+    font-size: 22px;
+    padding-bottom: 4%;
+    color: #171717;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#content #ab-right {
+    width: 50%;
+
+}
+
+#ab-right img {
+    width: 80%;
+    object-fit: cover;
+    margin: 0% 12%;   
+    border: 4px solid #BF0A19;
+}
+
+footer {
+    position: absolute;
+    top: 220%;
+    background-color: #084DA6;
+    width: 100%;
+}
+
+footer #div #links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 2%;
+}
+
+#links li {
+    font-size: 30px;
+    color: white;
+}
+
+#links li a{
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+}
+
+#links li a:hover{
+    color:#171717;
+}
+
 @media (max-width: 600px) {
     #nav-left > #logo {
         width: 100px;
@@ -166,4 +245,40 @@ nav {
         width: 180px;
         height: 180px;
     }
+
+    #About #content {
+        flex-direction: column;
+    }
+    
+    #content #ab-left {
+        width: 100%;
+        margin: 0%;
+    }
+    
+    #ab-left h2{
+        font-size: 55px;
+        padding: 0% 4%;
+        color: #084DA6;
+    }
+    
+    #ab-left p{
+        font-size: 20px;
+        padding: 4%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    #content #ab-right {
+        width: 100%;
+    
+    }
+    
+    #ab-right img {
+        width: 100%;
+        margin: 0%;   
+    }   
+    
+    footer {
+        top: 250%;
+    }
+    
 }
